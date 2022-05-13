@@ -1,0 +1,12 @@
+<templateSet group="PHP">
+  <template name="pre" value="echo &quot;&lt;pre&gt;&quot;;&#10;print_r($END$);" description="print array" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="templog" value="/** LOG START **/&#10;$writer = new \Zend_Log_Writer_Stream(BP . '/var/log/logfile.log');&#10;$logger = new \Zend_Log();&#10;$logger-&gt;addWriter($writer);&#10;$logger-&gt;info('Log From ');&#10;$logger-&gt;info('Array Log'.print_r($myArrayVar, true));&#10;/** LOG END **/" description="temporary log" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>
